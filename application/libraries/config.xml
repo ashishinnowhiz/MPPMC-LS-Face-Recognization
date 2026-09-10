@@ -1,0 +1,13 @@
+<configuration xmlns="http://logging.apache.org/log4php/">
+		<appender name="myFileAppender" class="LoggerAppenderDailyFile">
+        <layout class="LoggerLayoutPattern">
+            <param name="conversionPattern" value=" %date{F j, Y, g:i:s a} %server{REMOTE_ADDR} %server{HTTP_USER_AGENT} %server{HTTP_HOST}%server{REQUEST_URI} %newline %message%newline" />
+        </layout>
+        <param name="file" value="logfiles/digimarker_%s.log" />
+		<param name="datePattern" value="Y-m-d" />
+    </appender>
+        <root>
+            <appender_ref ref="myFileAppender" />
+        </root>
+</configuration>
+

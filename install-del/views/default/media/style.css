@@ -1,0 +1,80 @@
+
+
+	div#sidebar div.setup-progress {
+		padding-right: 20px; }
+
+		div#sidebar div.setup-progress ul {
+			padding:0px;
+			 }
+
+			div#sidebar div.setup-progress ul li {
+				list-style:none;
+				padding-left: 20px; }
+
+				div#sidebar div.setup-progress ul li.completed {
+					background: url('step-completed.png') no-repeat 0 4px; }
+
+				div#sidebar div.setup-progress ul li.current {
+					background: url('step-current.png') no-repeat 0 4px; }
+
+				div#sidebar div.setup-progress ul li.next {
+					background: url('step-next.png') no-repeat 0 4px; }
+
+
+	div#content div.setup-progress {
+		font-weight: bold;font-size:22px;}
+
+	div#content div.error {
+		background: url('error.png') no-repeat;
+		color: #D70000;
+		line-height: 16px;
+		margin-bottom: 10px;
+		padding-left: 20px; }
+
+	div#content div.info {
+		line-height: 18px;
+		padding-bottom: 10px; }
+
+	div#content div.sections {
+		padding-bottom: 10px; }
+
+		div#content div.sections h2 {
+			font-weight: bold;
+			padding-bottom: 10px; }
+
+
+div.grid {
+	border-bottom: 1px solid #eeeeee;
+	clear: both;
+	margin-bottom: 10px; }
+
+	div.grid div.even {
+		border-top: 1px solid #eeeeee; }
+
+	div.grid div.odd {
+		background: #fffff4;
+		border-top: 1px solid #eeeeee; }
+
+	div.grid div.first { }
+
+		div.grid label {
+			display: block;
+			float: left;
+			line-height: 24px;
+			width: 220px; }
+
+		div.grid div.value {
+			line-height: 24px;
+			margin-left: 160px; }
+
+			div.grid div.value span.pass {
+				color: #008000; }
+
+			div.grid div.value span.fail {
+				color: #C80000; }
+
+
+
+
+div.clear {
+	clear: both; }

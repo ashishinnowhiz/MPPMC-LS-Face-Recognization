@@ -1,0 +1,11 @@
+{
+  "require": {
+    "phpoffice/phpspreadsheet": "^1.29",
+    "aws/aws-sdk-php": "^3.300"
+  },
+  "config": {
+    "platform": {
+      "php": "7.4"
+    }
+  }
+}

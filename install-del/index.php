@@ -1,0 +1,32 @@
+<?php
+/*
+=====================================================
+PHP Setup Wizard Script - by VLD Interactive Inc.
+----------------------------------------------------
+http://www.phpsetupwizard.com/
+http://www.vldinteractive.com/
+-----------------------------------------------------
+Copyright (c) 2015 VLD Interactive Inc.
+=====================================================
+THIS IS COPYRIGHTED SOFTWARE
+PLEASE READ THE LICENSE AGREEMENT
+http://www.phpsetupwizard.com/license/
+=====================================================
+*/
+ini_set('max_execution_time', '100');
+//ini_set('display_errors', 'on');
+//error_reporting(E_ALL);
+
+$protocol = isset($_SERVER["HTTPS"]) ? 'https' : 'http';
+$base_path = str_replace('\\', '/', realpath(dirname(__FILE__))).'/';
+$virtual_path = str_replace('\\', '/', $protocol.'://' . $_SERVER['HTTP_HOST'] . dirname($_SERVER['PHP_SELF'])).'/';
+$url_path=dirname($_SERVER['PHP_SELF']).'/';
+define('BASE_PATH', $base_path);
+define('VIRTUAL_PATH', $virtual_path);
+define('URL_PATH', $url_path);
+include BASE_PATH . 'includes/core/wizard.php';
+include BASE_PATH . 'includes/wizard.php';
+
+$wizard = new phpSetupWizard();
+
+$wizard->run();
