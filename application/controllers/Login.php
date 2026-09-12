@@ -273,7 +273,7 @@ public function otpVerification(){
         $face_detail['Face_Setting'] = json_decode($face_info["setting_json"],true);
         $otp =   $this->session->userdata("otp");
         $get_otp = $this->input->post('otp');
-    if($otp == $get_otp){
+        if($otp == $get_otp){
         $string = $face_detail['Face_Setting']['role'];
         $searchValue = $data['user_role'];			
         $array = explode('#', $string);
@@ -740,7 +740,7 @@ public function marker_login($email)
 
     //face verification code start 
     //------------------------------------------
- public function capture_face($email,$user_role){    
+  public function capture_face($email,$user_role){    
     $this->db->where('user_email', $email);
     $this->db->limit(1);
     $query = $this->db->get('users');
@@ -755,12 +755,9 @@ public function marker_login($email)
         $data['profile_pic'] = $row['profile_img'];
         $this->load->view('face-verification',$data);
        //  $this->load->view('face_bak',$data);
-        
     }
   }
   public function detect_face(){
-    //   error_reporting(E_ALL);
-    //   ini_set('display_errors', '1');
 	    header('Content-Type: application/json');
         $input = json_decode(file_get_contents('php://input'), true);
         if (!isset($input['image'])) {

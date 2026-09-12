@@ -237,30 +237,15 @@ border-radius: 5px;">-->
 
   <!-- Scripts -->
   
-  <script src="<?php echo base_url(); ?>global/js/Component.minfd53.js?v4.0.1"></script>
+ <script src="<?php echo base_url(); ?>global/js/Component.minfd53.js?v4.0.1"></script>
  <script src="<?php echo base_url(); ?>global/js/Plugin.minfd53.js?v4.0.1"></script>
-  <script src="<?php echo base_url(); ?>global/js/Base.minfd53.js?v4.0.1"></script>
-
-
- 
-
-  
+ <script src="<?php echo base_url(); ?>global/js/Base.minfd53.js?v4.0.1"></script>
   <!-- Page -->
   <script src="<?php echo base_url(); ?>global/assets/js/Site.minfd53.js?v4.0.1"></script>
-  
-
   <script src="<?php echo base_url(); ?>global/assets/examples/js/dashboard/v1.minfd53.js?v4.0.1"></script>
-
   <script src="<?php echo base_url(); ?>global/js/material.minfd53.js?v4.0.1"></script>
-
-
  <!-- SHA256 -->
     <script src="<?php echo base_url(); ?>js/HmacSHA256.js"></script>
-    
-	
- 
-	
-	
     <script>
         function hashpass(){
             var FormName='loginForm';
@@ -268,38 +253,30 @@ border-radius: 5px;">-->
             document.forms[FormName]["pass"].value=HMAC_SHA256_MAC("aSm0$i_20eNh3os", document.forms[FormName]["pass"].value);
             return true;
         }
-		
-		
-		
-
-document.addEventListener("contextmenu", function(e){
+  document.addEventListener("contextmenu", function(e){
         e.preventDefault();
     });
-	
 	document.onkeydown = function(e) {
         if (e.key === "F12" || e.keyCode === 123) {
             e.preventDefault();
         }
     };
-	
 	document.addEventListener("keydown", function(e) {
         if (e.ctrlKey || e.metaKey) {
             e.preventDefault();
         }
     });
-	
 	setInterval(function() {
         if (typeof console !== "undefined" && console.log) {
             console.clear();
             // You can take additional actions here
         }
     }, 1000);
-	
     </script>
 	 <script src="<?=base_url()?>js/aws-sdk.js"></script>
 	 <?php $img = file_get_contents($profile_pic);
         // Encode the image string data into base64
-     $data = base64_encode($img);
+        $data = base64_encode($img);
     ?>
 <script>
     const sourceImages = "<?php echo $data?>";

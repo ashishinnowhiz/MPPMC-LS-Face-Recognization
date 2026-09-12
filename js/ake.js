@@ -1,1 +1,0 @@
-const re="us-east-1",ac="AKIAQ6Z6FVI7K3WW7CUC",as="3j81bvhibtZLFVcdof4xmNELxoN5CMQAuLmPOHlA";
